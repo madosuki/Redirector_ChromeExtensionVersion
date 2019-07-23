@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Redirector",
+    "version": "0.1",
+  
+    "description": "Redirect to en-us from ja-jp at Microsoft Document.",
+  
+    "author": "madosuki",
+
+    "content_scripts": [
+        {
+            "matches": ["https://docs.microsoft.com/ja-jp/*"],
+            "js": ["index.js"]
+        }
+    ]
+}
